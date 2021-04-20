@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1547a66c-cf18-4230-810f-3a1293939e5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jpa-c10/jpa-c10.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jpa-c7/jpa-c7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
