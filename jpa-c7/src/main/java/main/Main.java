@@ -28,6 +28,7 @@ public class Main {
         em.persist(p1);
         //em.persist(s1);
 
+
         em.getTransaction().commit();
         em.close();
     }
