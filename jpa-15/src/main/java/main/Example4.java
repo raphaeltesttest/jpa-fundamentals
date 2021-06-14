@@ -40,6 +40,21 @@ public class Example4 {
         em.getTransaction().commit();
         em.close();
     }
+    // WRONG!
+    public List<Product> findProductsByPrice(EntityManager em, double price) {
+        CriteriaBuilder builder = em.getCriteriaBuilder();
+        CriteriaQuery<Product> query = builder.createQuery(Product.class);
+
+        Root<Product> product = query.from(Product.class);
+        query.select(product).where(
+                builder.greaterThan(product.get("price"), price)
+        );
+
+        TypedQuery<Product> tq = em.createQuery(query);
+        List<Product> result = tq.getResultList();
+
+        return result;
+    }
 
     public static CriteriaQuery<Product> buildProductCriteriaQuery(EntityManager em) {
         CriteriaBuilder builder = em.getCriteriaBuilder();
